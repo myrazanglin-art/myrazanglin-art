@@ -33,9 +33,9 @@ jobs:
       # writes bloom-header-night.svg next to it, and draws the seasonal footer
       - uses: yuki4266/living-scene@v1
         with:
-          lat: "35.99"          # Durham, NC
-          lon: "-78.90"
-          tz: America/New_York
+          lat: "22.3193"          # Hong Kong
+          lon: "114.1694"
+          tz: Asia/Hong_Kong
           header: bloom-header.svg
           sky: "false"
           weather: ${{ inputs.weather }}
