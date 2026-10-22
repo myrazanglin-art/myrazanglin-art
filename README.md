@@ -2,7 +2,7 @@
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="bloom-header-night.svg" />
-    <img src="bloom-header.svg" width="900" alt="yuki4266 — blooming banner" />
+    <img src="bloom-header.svg" width="900" alt="Yiming — blooming banner" />
   </picture>
 </div>
 <!-- ============ Tech Garden ============ -->
@@ -39,7 +39,7 @@
 <br/>
 <!-- ============ Snake ============ -->
 <div align="center">
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/yuki4266/yuki4266/output/github-contribution-grid-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/myrazanglin-art/myrazanglin-art/output/github-contribution-grid-snake.svg" />
 </div>
 <!-- ============ Footer (a cat lives here) ============ -->
 <div align="center">
@@ -47,6 +47,6 @@
     <source media="(prefers-color-scheme: dark)" srcset="garden-footer-night.svg" />
     <img src="garden-footer.svg" width="900" alt="garden footer" />
   </picture>
-![Profile Views](https://komarev.com/ghpvc/?username=yuki4266&label=Profile%20views&color=F4795B&style=flat)
-<sub>The sky above follows the real forecast and the garden follows the season — powered by <a href="https://github.com/yuki4266/living-scene">living-scene</a>. Want one? <a href="https://github.com/yuki4266/living-scene-template/generate">Use the template</a>.</sub>
+![Profile Views](https://komarev.com/ghpvc/?username=myrazanglin-art&label=Profile%20views&color=F4795B&style=flat)
+<sub>The sky above follows the real forecast and the garden follows the season.</sub>
 </div>
