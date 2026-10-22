@@ -54,7 +54,7 @@
     <img src="https://img.shields.io/badge/🚀_Hometree_Live_App-FF1493?style=for-the-badge&logo=streamlit" alt="Launch Hometree App" />
   </a>
   <br/>
-  <sub style="font-size: 11px; color: #86868B;"><i>Architecting an intimate, privacy-first social space where connections are driven by shared tastes in music, cinema, and literature.</i></sub>
+  <sub style="font-size: 11px; color: #86868B;"><i>Architecting an intimate, privacy-first social space where connections are driven by shared tastes in music, movies, and books.</i></sub>
   
   <br/><br/><br/>
 
