@@ -23,6 +23,8 @@
   </picture>
 </div>
 
+<br/>
+
 <!-- ============ Tech Garden (Your Pink Skills) ============ -->
 <div align="center">
 <img src="chips/label-0.svg" alt="PRODUCT & AI" /> <img src="chips/figma.svg" alt="Figma" /> <img src="chips/notion.svg" alt="Notion" /> <img src="chips/openai.svg" alt="OpenAI" /> <img src="chips/anthropic.svg" alt="Claude" /> <img src="chips/githubcopilot.svg" alt="Copilot" />
@@ -44,10 +46,10 @@
 
 <br/>
 
-<!-- ============ Featured Project Website Button ============ -->
+<!-- ============ Featured Live Project ============ -->
 <div align="center">
-  <a href="https://myrazanglin-art.github.io/Hometree-Social-App/">
-    <img src="https://img.shields.io/badge/View_My_Live_Project_Website-Hometree-FF69B4?style=for-the-badge&logo=googlechrome" alt="Hometree Live Website" />
+  <a href="https://hometree-social-app-hgrjctg3cpkjlylf2hapxe.streamlit.app/">
+    <img src="https://img.shields.io/badge/🚀_Launch_Hometree_Live_App-FF1493?style=for-the-badge&logo=streamlit" alt="Launch Hometree App" />
   </a>
 </div>
 
