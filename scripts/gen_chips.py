@@ -16,12 +16,11 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "chips"
 ICON_URL = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{}.svg"
 FONT = "Segoe UI, Ubuntu, Helvetica, Arial, sans-serif"
-# 这里改成了四种高颜值粉色
-CHIP_COLOURS = ["#FF69B4", "#FFB6C1", "#FFC0CB", "#FF1493"]  
+# 粉色主题
+CHIP_COLOURS = ["#FF69B4", "#FFB6C1", "#FFC0CB", "#FF1493"]
 GREY = "#8b949e"
 
-# (row label, petal colour, centre colour, chips)
-# chip = (file slug, Simple Icons slug or None, label, description)
+# 你的专属技能
 STACK = [
     ("PRODUCT & DESIGN", "#FF69B4", "#FF1493", [
         ("figma", "figma", "Figma",
@@ -57,13 +56,13 @@ STACK = [
     ]),
 ]
 
-# Arial Bold advance widths (per 1000 em) — a safe upper bound for the Segoe/Helvetica stack
+# Arial Bold advance widths (per 1000 em)
 _W = {**{c: 722 for c in "ABCDHKNRU"}, "E": 667, "F": 611, "G": 778, "I": 278, "J": 556, "L": 611, "M": 833,
       "O": 778, "P": 667, "Q": 778, "S": 667, "T": 611, "V": 667, "W": 944, "X": 667, "Y": 667, "Z": 611,
       **{c: 556 for c in "acekssxyv"}, **{c: 611 for c in "bdghnopqu"}, "f": 333, "i": 278, "j": 278, "l": 278,
       "m": 889, "r": 389, "t": 333, "w": 778, "z": 500, " ": 278, ".": 278, "/": 278, "-": 333, "+": 584}
 
-# Arial Regular advance widths, for the guide descriptions (Liberation Sans on Linux shares them)
+# Arial Regular advance widths
 _WR = {"A": 667, "B": 667, "C": 722, "D": 722, "E": 667, "F": 611, "G": 778, "H": 722, "I": 278, "J": 500, "K": 667,
        "L": 556, "M": 833, "N": 722, "O": 778, "P": 667, "Q": 778, "R": 722, "S": 667, "T": 611, "U": 722, "V": 667,
        "W": 944, "X": 667, "Y": 667, "Z": 611, **{c: 556 for c in "abdeghnopqu"}, **{c: 500 for c in "cksvxyz"},
@@ -71,15 +70,11 @@ _WR = {"A": 667, "B": 667, "C": 722, "D": 722, "E": 667, "F": 611, "G": 778, "H"
        "+": 584, "&": 667, "'": 191, '"': 355, "(": 333, ")": 333, "—": 1000, **{c: 278 for c in ".,:;!"},
        **{c: 556 for c in "0123456789?"}}
 
-
 def text_width(s, size, table=None):
     table = table or _W
     return sum(table.get(c, 1000 if ord(c) > 127 else 611) for c in s) * size / 1000
 
-
 def wrap_px(text, size, max_w):
-    """Greedy word wrap on estimated pixel width, so lines fill the card instead
-    of stopping at a character count that only fills two thirds of it."""
     lines, cur = [], ""
     for word in text.split():
         cand = f"{cur} {word}".strip()
@@ -89,7 +84,6 @@ def wrap_px(text, size, max_w):
         else:
             cur = cand
     return lines + [cur] if cur else lines
-
 
 _icons = {}
 
@@ -104,18 +98,15 @@ def icon_path(slug):
             _icons[slug] = None
     return _icons[slug]
 
-
 def svg(w, h, title, body):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{FONT}">'
             f'<title>{html.escape(title)}</title>{body}</svg>\n')
-
 
 def flower(x, y, petal, centre, dur):
     petals = "".join(f'<circle cx="{cx}" cy="{cy}" r="3.4" fill="{petal}"/>'
                      for cx, cy in [(0, -6.5), (6.2, -2), (3.8, 5.3), (-3.8, 5.3), (-6.2, -2)])
     return (f'<g transform="translate({x},{y})"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="{dur}s" repeatCount="indefinite"/>'
             f'{petals}</g><circle r="2.8" fill="{centre}"/></g>')
-
 
 def chip(slug, icon_slug, label, colour):
     rnd = random.Random(label)
@@ -137,15 +128,12 @@ def chip(slug, icon_slug, label, colour):
             f'{inner}</g></g>')
     return svg(w, 30, label, body)
 
-
 def label_chip(text, petal, centre):
     w = round(30 + len(text) * 7.6 + 5)
     return svg(w, 30, text, flower(14, 15, petal, centre, 14) +
                f'<text x="30" y="19" font-size="11" letter-spacing="1.5" fill="{GREY}">{html.escape(text)}</text>')
 
-
 def guide(text, petal, centre, chips):
-    """Field-guide card: one row per chip."""
     P, X0, X1 = 66, 78, 812
     h = 50 + len(chips) * P
     parts = [f'\n<rect x="1" y="1" width="858" height="{h - 2}" rx="14" fill="{petal}" fill-opacity="0.05" stroke="{petal}" stroke-opacity="0.4" stroke-width="1.2"/>\n',
@@ -169,7 +157,6 @@ def guide(text, petal, centre, chips):
                      f'{tile}{glyph}<text x="{X0}" y="{y + 11}" font-size="14" font-weight="700" fill="{c}">{html.escape(label)}</text>{body}{rule}</g>\n')
     return svg(860, h, f"{text} field guide", "".join(parts))
 
-
 def readme_block():
     def img(name, alt):
         digest = hashlib.sha1((OUT / name).read_bytes()).hexdigest()[:8]
@@ -185,13 +172,11 @@ def readme_block():
             '<summary>🌱 &nbsp;<b>Field guide</b> — open to read what every chip actually is</summary>\n<br/>\n<div align="center">\n'
             + "\n".join(guides) + "\n</div>\n</details>\n\n</div>\n")
 
-
 def main():
     OUT.mkdir(exist_ok=True)
     keep = set()
     for i, (text, petal, centre, chips) in enumerate(STACK):
         for slug, icon, label, desc in chips:
-            # write chip SVG
             (OUT / f"{slug}.svg").write_text(chip(slug, icon, label, CHIP_COLOURS[chips.index((slug, icon, label, desc)) % 4]))
             keep.add(f"{slug}.svg")
         (OUT / f"label-{i}.svg").write_text(label_chip(text, petal, centre))
@@ -209,7 +194,6 @@ def main():
     end = s.index(end_marker, start) + len(end_marker)
     readme.write_text(s[:start] + readme_block() + s[end:])
     print(f"{len(keep)} svgs written, {len(stale)} stale removed: {', '.join(p.name for p in stale) or '-'}")
-
 
 if __name__ == "__main__":
     main()
