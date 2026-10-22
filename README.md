@@ -46,11 +46,25 @@
 
 <br/>
 
-<!-- ============ Featured Live Project ============ -->
+<!-- ============ Projects (极简缩小字体版) ============ -->
 <div align="center">
+  
+  <!-- 项目一：Hometree 社交 App -->
   <a href="https://hometree-social-app-hgrjctg3cpkjlylf2hapxe.streamlit.app/">
-    <img src="https://img.shields.io/badge/🚀_Launch_Hometree_Live_App-FF1493?style=for-the-badge&logo=streamlit" alt="Launch Hometree App" />
+    <img src="https://img.shields.io/badge/🚀_Hometree_Live_App-FF1493?style=for-the-badge&logo=streamlit" alt="Launch Hometree App" />
   </a>
+  <br/>
+  <sub style="font-size: 11px; color: #86868B;"><i>Architecting an intimate, privacy-first social space where connections are driven by shared tastes in music, cinema, and literature.</i></sub>
+  
+  <br/><br/><br/>
+
+  <!-- 项目二：Rhythm Runner 音游官方网站 -->
+  <a href="https://myrazanglin-art.github.io/Rhythm-Runner-Game/">
+    <img src="https://img.shields.io/badge/🎮_Rhythm_Runner-00FFCC?style=for-the-badge&logo=godotengine&logoColor=black" alt="Rhythm Runner Website" />
+  </a>
+  <br/>
+  <sub style="font-size: 11px; color: #86868B;"><i>Bridging computer music theory and gameplay. An automated beatmap generation engine that translates raw audio waveforms into real-time rhythmic challenges.</i></sub>
+
 </div>
 
 <br/>
