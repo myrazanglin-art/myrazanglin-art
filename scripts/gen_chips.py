@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "chips"
 ICON_URL = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{}.svg"
 FONT = "Segoe UI, Ubuntu, Helvetica, Arial, sans-serif"
+
 # 粉色主题
 CHIP_COLOURS = ["#FF69B4", "#FFB6C1", "#FFC0CB", "#FF1493"]
 GREY = "#8b949e"
@@ -23,52 +24,31 @@ GREY = "#8b949e"
 # 你的专属技能
 STACK = [
     ("PRODUCT & DESIGN", "#FF69B4", "#FF1493", [
-        ("figma", "figma", "Figma",
-         "UI/UX prototyping, user flows, and collaborative design."),
-        ("notion", "notion", "Notion",
-         "PRD writing, agile sprints, and knowledge base management."),
-        ("openai", "openai", "OpenAI API",
-         "Integrating LLMs into products for automated matching and ice-breaking."),
-        ("anthropic", "anthropic", "Claude",
-         "Leveraging long-context models for deep research and content drafting."),
-        ("githubcopilot", "githubcopilot", "Copilot",
-         "AI pair programming for rapid prototyping and backend development."),
+        ("figma", "figma", "Figma", "UI/UX prototyping, user flows, and collaborative design."),
+        ("notion", "notion", "Notion", "PRD writing, agile sprints, and knowledge base management."),
+        ("openai", "openai", "OpenAI API", "Integrating LLMs into products for automated matching and ice-breaking."),
+        ("anthropic", "anthropic", "Claude", "Leveraging long-context models for deep research and content drafting."),
+        ("githubcopilot", "githubcopilot", "Copilot", "AI pair programming for rapid prototyping and backend development."),
     ]),
     ("TECH & DATA", "#FFB6C1", "#FF69B4", [
-        ("python", "python", "Python",
-         "The core language for backend logic, matching algorithms, and automation."),
-        ("flask", "flask", "Flask",
-         "Web application framework used to build the Hometree backend."),
-        ("mysql", "mysql", "MySQL",
-         "Relational database design and management for user matching data."),
-        ("r", "r", "R",
-         "Statistical analysis and data visualization for user research."),
-        ("java", "java", "Java",
-         "Object-oriented programming fundamentals."),
+        ("python", "python", "Python", "The core language for backend logic, matching algorithms, and automation."),
+        ("flask", "flask", "Flask", "Web application framework used to build the Hometree backend."),
+        ("mysql", "mysql", "MySQL", "Relational database design and management for user matching data."),
+        ("r", "r", "R", "Statistical analysis and data visualization for user research."),
+        ("java", "java", "Java", "Object-oriented programming fundamentals."),
     ]),
     ("CREATIVE & AUDIO", "#FFC0CB", "#FF1493", [
-        ("maxmsp", None, "Max/MSP",
-         "Visual programming for interactive media and experimental electronic music."),
-        ("puredata", None, "Pure Data",
-         "Open-source visual programming for audio and multimedia DSP."),
-        ("ableton", None, "Ableton",
-         "Digital audio workstation for producing indie and electronic music."),
+        ("maxmsp", None, "Max/MSP", "Visual programming for interactive media and experimental electronic music."),
+        ("puredata", None, "Pure Data", "Open-source visual programming for audio and multimedia DSP."),
+        ("ableton", None, "Ableton", "Digital audio workstation for producing indie and electronic music."),
     ]),
 ]
 
-# Arial Bold advance widths (per 1000 em)
-_W = {**{c: 722 for c in "ABCDHKNRU"}, "E": 667, "F": 611, "G": 778, "I": 278, "J": 556, "L": 611, "M": 833,
-      "O": 778, "P": 667, "Q": 778, "S": 667, "T": 611, "V": 667, "W": 944, "X": 667, "Y": 667, "Z": 611,
-      **{c: 556 for c in "acekssxyv"}, **{c: 611 for c in "bdghnopqu"}, "f": 333, "i": 278, "j": 278, "l": 278,
-      "m": 889, "r": 389, "t": 333, "w": 778, "z": 500, " ": 278, ".": 278, "/": 278, "-": 333, "+": 584}
+# Arial Bold advance widths
+_W = {**{c: 722 for c in "ABCDHKNRU"}, "E": 667, "F": 611, "G": 778, "I": 278, "J": 556, "L": 611, "M": 833, "O": 778, "P": 667, "Q": 778, "S": 667, "T": 611, "V": 667, "W": 944, "X": 667, "Y": 667, "Z": 611, **{c: 556 for c in "acekssxyv"}, **{c: 611 for c in "bdghnopqu"}, "f": 333, "i": 278, "j": 278, "l": 278, "m": 889, "r": 389, "t": 333, "w": 778, "z": 500, " ": 278, ".": 278, "/": 278, "-": 333, "+": 584}
 
 # Arial Regular advance widths
-_WR = {"A": 667, "B": 667, "C": 722, "D": 722, "E": 667, "F": 611, "G": 778, "H": 722, "I": 278, "J": 500, "K": 667,
-       "L": 556, "M": 833, "N": 722, "O": 778, "P": 667, "Q": 778, "R": 722, "S": 667, "T": 611, "U": 722, "V": 667,
-       "W": 944, "X": 667, "Y": 667, "Z": 611, **{c: 556 for c in "abdeghnopqu"}, **{c: 500 for c in "cksvxyz"},
-       "f": 278, "i": 222, "j": 222, "l": 222, "m": 833, "r": 333, "t": 278, "w": 722, " ": 278, "-": 333, "/": 278,
-       "+": 584, "&": 667, "'": 191, '"': 355, "(": 333, ")": 333, "—": 1000, **{c: 278 for c in ".,:;!"},
-       **{c: 556 for c in "0123456789?"}}
+_WR = {"A": 667, "B": 667, "C": 722, "D": 722, "E": 667, "F": 611, "G": 778, "H": 722, "I": 278, "J": 500, "K": 667, "L": 556, "M": 833, "N": 722, "O": 778, "P": 667, "Q": 778, "R": 722, "S": 667, "T": 611, "U": 722, "V": 667, "W": 944, "X": 667, "Y": 667, "Z": 611, **{c: 556 for c in "abdeghnopqu"}, **{c: 500 for c in "cksvxyz"}, "f": 278, "i": 222, "j": 222, "l": 222, "m": 833, "r": 333, "t": 278, "w": 722, " ": 278, "-": 333, "/": 278, "+": 584, "&": 667, "'": 191, '"': 355, "(": 333, ")": 333, "—": 1000, **{c: 278 for c in ".,:;!"}, **{c: 556 for c in "0123456789?"}}
 
 def text_width(s, size, table=None):
     table = table or _W
