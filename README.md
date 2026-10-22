@@ -1,3 +1,20 @@
+<!-- ============ Header (Pink & Typing) ============ -->
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Yiming+%F0%9F%8C%B8" alt="Typing SVG" />
+  </a>
+  <br/>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=There+Is+a+Light+That+Never+Goes+Out." alt="Typing SVG" />
+  </a>
+  <br/>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1000&color=FF69B4&center=true&vCenter=true&width=600&lines=%F0%9F%93%8D+Hong+Kong+%7C+%F0%9F%8E%93+CUHK+(Learning+Design+%26+Technology)" alt="Typing SVG" />
+  </a>
+</div>
+
+<br/>
+
 <!-- ============ Bloom Header (live weather · day / night follows your theme) ============ -->
 <div align="center">
   <picture>
@@ -6,30 +23,23 @@
   </picture>
 </div>
 
-<br/>
-
-<!-- ============ Tech Garden (Stable Pink Badges) ============ -->
+<!-- ============ Tech Garden (Your Pink Skills) ============ -->
 <div align="center">
-  <b>🤖 AI & PRODUCT</b><br/>
-  <img src="https://img.shields.io/badge/Figma-FF69B4?style=flat-square&logo=figma&logoColor=white" alt="Figma" />
-  <img src="https://img.shields.io/badge/Notion-FFB6C1?style=flat-square&logo=notion&logoColor=white" alt="Notion" />
-  <img src="https://img.shields.io/badge/OpenAI_API-FFC0CB?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Claude-FF1493?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" />
-  <img src="https://img.shields.io/badge/Copilot-FF69B4?style=flat-square&logo=github&logoColor=white" alt="Copilot" />
-  <br/><br/>
+<img src="chips/label-0.svg" alt="PRODUCT & AI" /> <img src="chips/figma.svg" alt="Figma" /> <img src="chips/notion.svg" alt="Notion" /> <img src="chips/openai.svg" alt="OpenAI" /> <img src="chips/anthropic.svg" alt="Claude" /> <img src="chips/githubcopilot.svg" alt="Copilot" />
+<br/>
+<img src="chips/label-1.svg" alt="TECH & DATA" /> <img src="chips/python.svg" alt="Python" /> <img src="chips/flask.svg" alt="Flask" /> <img src="chips/mysql.svg" alt="MySQL" /> <img src="chips/r.svg" alt="R" /> <img src="chips/java.svg" alt="Java" />
+<br/>
+<img src="chips/label-2.svg" alt="CREATIVE & AUDIO" /> <img src="chips/maxmsp.svg" alt="Max/MSP" /> <img src="chips/puredata.svg" alt="Pure Data" /> <img src="chips/ableton.svg" alt="Ableton" />
 
-  <b>💻 TECH & DATA</b><br/>
-  <img src="https://img.shields.io/badge/Python-FF69B4?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Flask-FFB6C1?style=flat-square&logo=flask&logoColor=white" alt="Flask" />
-  <img src="https://img.shields.io/badge/MySQL-FFC0CB?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/R-FF1493?style=flat-square&logo=r&logoColor=white" alt="R" />
-  <img src="https://img.shields.io/badge/Java-FF69B4?style=flat-square&logo=java&logoColor=white" alt="Java" />
-  <br/><br/>
-
-  <b>🎧 CREATIVE & AUDIO</b><br/>
-  <img src="https://img.shields.io/badge/Max/MSP-FFB6C1?style=flat-square" alt="Max/MSP" />
-  <img src="https://img.shields.io/badge/Pure_Data-FFC0CB?style=flat-square" alt="Pure Data" />
-  <img src="https://img.shields.io/badge/Ableton-FF1493?style=flat-square&logo=ableton&logoColor=white" alt="Ableton" />
+<details>
+<summary>🌱 &nbsp;<b>Field guide</b> — open to read what every chip actually is</summary>
+<br/>
+<div align="center">
+<img src="chips/guide-0.svg" alt="PRODUCT & AI field guide" /><br/>
+<img src="chips/guide-1.svg" alt="TECH & DATA field guide" /><br/>
+<img src="chips/guide-2.svg" alt="CREATIVE & AUDIO field guide" /><br/>
+</div>
+</details>
 </div>
 
 <br/>
@@ -58,8 +68,8 @@
 
   <br/>
 
-  <!-- Profile views (Pink) -->
+  <!-- Profile views -->
   ![Profile Views](https://komarev.com/ghpvc/?username=myrazanglin-art&label=Profile%20views&color=FF69B4&style=flat)
 
-  <sub>Un jour je serai de retour près de toi.</sub>
+  <sub style="color: #FF69B4;">Un jour je serai de retour près de toi.</sub>
 </div>
