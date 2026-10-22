@@ -44,6 +44,15 @@
 
 <br/>
 
+<!-- ============ Featured Project Website Button ============ -->
+<div align="center">
+  <a href="https://myrazanglin-art.github.io/Hometree-Social-App/">
+    <img src="https://img.shields.io/badge/View_My_Live_Project_Website-Hometree-FF69B4?style=for-the-badge&logo=googlechrome" alt="Hometree Live Website" />
+  </a>
+</div>
+
+<br/>
+
 <!-- ============ Stats (Live from your account) ============ -->
 <div align="center">
   <picture>
