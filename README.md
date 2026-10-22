@@ -44,12 +44,12 @@
 
 <br/>
 
-<!-- ============ Stats ============ -->
+<!-- ============ Stats (Live from your account) ============ -->
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="streak-night.svg" />
-  <img width="495" src="streak.svg" alt="contribution streak" />
-</picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=myrazanglin-art&hide_border=true&background=00000000&ring=FF69B4&fire=FF69B4&currStreakLabel=FF69B4&sideLabels=FF69B4&dates=FFB6C1&currStreakNum=FF69B4&sideNums=FF69B4&stroke=FF69B4" />
+    <img width="495" src="https://github-readme-streak-stats.herokuapp.com/?user=myrazanglin-art&hide_border=true&background=00000000&ring=FF69B4&fire=FF69B4&currStreakLabel=FF69B4&sideLabels=FF69B4&dates=FFB6C1&currStreakNum=FF69B4&sideNums=FF69B4&stroke=FF69B4" alt="contribution streak" />
+  </picture>
 </div>
 
 <br/>
