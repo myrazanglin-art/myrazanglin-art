@@ -98,3 +98,10 @@
 
   <sub style="color: #FF69B4;">Un jour je serai de retour près de toi.</sub>
 </div>
+<br/>
+
+<!-- ============ Music Player (Netease Cloud Music) ============ -->
+<div align="center">
+  <!-- 使用网易云官方极其干净的外链播放器（高度66，自动播放设为0防止被GitHub拦截） -->
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=421885306&auto=0&height=66"></iframe>
+</div>
